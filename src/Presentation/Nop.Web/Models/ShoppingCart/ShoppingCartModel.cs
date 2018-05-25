@@ -119,6 +119,10 @@ namespace Nop.Web.Models.ShoppingCart
             /// Selected year value for datepicker
             /// </summary>
             public int? SelectedYear { get; set; }
+            /// <summary>
+            /// Count displayed years for datepicker
+            /// </summary>
+            public int? CountOfDisplayedYears { get; set; }
 
             /// <summary>
             /// Allowed file extensions for customer uploaded files

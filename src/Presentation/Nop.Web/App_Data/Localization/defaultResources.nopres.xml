@@ -1637,6 +1637,12 @@
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.AttributeControlType.Hint">
     <Value>Choose how to display your attribute values.</Value>
+  </LocaleResource>  
+  <LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.CountOfDisplayedYears">
+    <Value>Count of displayed years</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.CountOfDisplayedYears.Hint">
+    <Value>Enter count of displayed years. If 0 then displayed only current year.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.DefaultValue">
     <Value>Default value</Value>
@@ -3638,6 +3644,12 @@
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.ValidationRules">
     <Value>Validation rules</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.ValidationRules.CountOfDisplayedYears">
+    <Value>Count of displayed years</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.ValidationRules.CountOfDisplayedYears.Hint">
+    <Value>Enter count of displayed years. If 0 then displayed only current year.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.ValidationRules.DefaultValue">
     <Value>Default value</Value>

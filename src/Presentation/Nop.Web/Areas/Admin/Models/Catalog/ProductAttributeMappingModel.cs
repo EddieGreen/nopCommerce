@@ -66,6 +66,10 @@ namespace Nop.Web.Areas.Admin.Models.Catalog
         [UIHint("Int32Nullable")]
         public int? ValidationFileMaximumSize { get; set; }
 
+        [NopResourceDisplayName("Admin.Catalog.Products.ProductAttributes.Attributes.ValidationRules.CountOfDisplayedYears")]
+        [UIHint("Int32Nullable")]
+        public int? CountOfDisplayedYears { get; set; }
+
         [NopResourceDisplayName("Admin.Catalog.Products.ProductAttributes.Attributes.ValidationRules.DefaultValue")]
         public string DefaultValue { get; set; }
 

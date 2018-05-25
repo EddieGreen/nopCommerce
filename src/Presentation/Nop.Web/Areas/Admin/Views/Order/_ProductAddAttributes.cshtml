@@ -12,8 +12,8 @@
     var attributeChangeHandlerFuncName = $"attribute_change_handler_{productId}";
 
     var getAttributeValueName = new Func<AddProductToOrderModel.ProductAttributeValueModel, string>((attributeValue) =>
-        string.IsNullOrEmpty(attributeValue.PriceAdjustment) ? attributeValue.Name : T("Products.ProductAttributes.PriceAdjustment",
-            attributeValue.Name, attributeValue.PriceAdjustment, attributeValue.CustomerEntersQty ? T("Products.ProductAttributes.PriceAdjustment.PerItem").Text : string.Empty).Text);
+string.IsNullOrEmpty(attributeValue.PriceAdjustment) ? attributeValue.Name : T("Products.ProductAttributes.PriceAdjustment",
+attributeValue.Name, attributeValue.PriceAdjustment, attributeValue.CustomerEntersQty ? T("Products.ProductAttributes.PriceAdjustment.PerItem").Text : string.Empty).Text);
 
     <div class="panel panel-default">
         <div class="panel-body">
@@ -137,7 +137,7 @@
                                             asp-month-name="@(controlId + "_month")" 
                                             asp-year-name="@(controlId + "_year")"
                                             asp-begin-year="@(DateTime.Now.Year)"
-                                            asp-end-year="@(DateTime.Now.Year + 1)"
+                                            asp-end-year="@(DateTime.Now.Year + attribute.CountOfDisplayedYears)"
                                         />
                                     }
                                     break;

@@ -57,6 +57,11 @@ namespace Nop.Core.Domain.Orders
         /// </summary>
         public bool LimitedToStores { get; set; }
 
+        /// <summary>
+        /// Gets or sets a count of displayed years for datepicker
+        /// </summary>
+        public int? CountOfDisplayedYears { get; set; }
+
         //validation fields
 
         /// <summary>

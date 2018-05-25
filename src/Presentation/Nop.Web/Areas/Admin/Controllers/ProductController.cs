@@ -2579,6 +2579,7 @@ namespace Nop.Web.Areas.Admin.Controllers
                 ValidationMaxLength = model.ValidationMaxLength,
                 ValidationFileAllowedExtensions = model.ValidationFileAllowedExtensions,
                 ValidationFileMaximumSize = model.ValidationFileMaximumSize,
+                CountOfDisplayedYears = model.CountOfDisplayedYears,
                 DefaultValue = model.DefaultValue
             };
             _productAttributeService.InsertProductAttributeMapping(productAttributeMapping);
@@ -2697,6 +2698,7 @@ namespace Nop.Web.Areas.Admin.Controllers
             productAttributeMapping.ValidationMaxLength = model.ValidationMaxLength;
             productAttributeMapping.ValidationFileAllowedExtensions = model.ValidationFileAllowedExtensions;
             productAttributeMapping.ValidationFileMaximumSize = model.ValidationFileMaximumSize;
+            productAttributeMapping.CountOfDisplayedYears = model.CountOfDisplayedYears;
             productAttributeMapping.DefaultValue = model.DefaultValue;
             _productAttributeService.UpdateProductAttributeMapping(productAttributeMapping);
 

@@ -765,6 +765,7 @@ namespace Nop.Web.Factories
                     TextPrompt = attribute.GetLocalized(x => x.TextPrompt),
                     IsRequired = attribute.IsRequired,
                     AttributeControlType = attribute.AttributeControlType,
+                    CountOfDisplayedYears = attribute.CountOfDisplayedYears,
                     DefaultValue = updatecartitem != null ? null : attribute.DefaultValue,
                     HasCondition = !string.IsNullOrEmpty(attribute.ConditionAttributeXml)
                 };

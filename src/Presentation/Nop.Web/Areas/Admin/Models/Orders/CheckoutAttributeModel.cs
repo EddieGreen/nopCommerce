@@ -59,6 +59,10 @@ namespace Nop.Web.Areas.Admin.Models.Orders
         [NopResourceDisplayName("Admin.Catalog.Attributes.CheckoutAttributes.Fields.DisplayOrder")]
         public int DisplayOrder { get; set; }
 
+        [NopResourceDisplayName("Admin.Catalog.Attributes.CheckoutAttributes.Fields.CountOfDisplayedYears")]
+        [UIHint("Int32Nullable")]
+        public int? CountOfDisplayedYears { get; set; }
+
         [NopResourceDisplayName("Admin.Catalog.Attributes.CheckoutAttributes.Fields.MinLength")]
         [UIHint("Int32Nullable")]
         public int? ValidationMinLength { get; set; }

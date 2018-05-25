@@ -1990,6 +1990,7 @@ namespace Nop.Web.Areas.Admin.Factories
                     model.ValidationMaxLength = productAttributeMapping.ValidationMaxLength;
                     model.ValidationFileAllowedExtensions = productAttributeMapping.ValidationFileAllowedExtensions;
                     model.ValidationFileMaximumSize = productAttributeMapping.ValidationFileMaximumSize;
+                    model.CountOfDisplayedYears = productAttributeMapping.CountOfDisplayedYears;
                     model.DefaultValue = productAttributeMapping.DefaultValue;
                 }
 

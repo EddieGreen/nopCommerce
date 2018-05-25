@@ -82,6 +82,8 @@ namespace Nop.Web.Areas.Admin.Models.Orders
 
             public bool HasCondition { get; set; }
 
+            public int? CountOfDisplayedYears { get; set; }
+
             /// <summary>
             /// Allowed file extensions for customer uploaded files
             /// </summary>

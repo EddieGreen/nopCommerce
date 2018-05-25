@@ -1154,6 +1154,18 @@ set @resources='
   <LocaleResource Name="Admin.Customers.Customers.Gdpr.Export">
     <Value>Export data</Value>
   </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.ValidationRules.CountOfDisplayedYears">
+    <Value>Count of displayed years</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Products.ProductAttributes.Attributes.ValidationRules.CountOfDisplayedYears.Hint">
+    <Value>Enter count of displayed years. If 0 then displayed only current year.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.CountOfDisplayedYears">
+    <Value>Count of displayed years</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Catalog.Attributes.CheckoutAttributes.Fields.CountOfDisplayedYears.Hint">
+    <Value>Enter count of displayed years. If 0 then displayed only current year.</Value>
+  </LocaleResource>
 </Language>
 '
 
@@ -2865,5 +2877,19 @@ IF NOT EXISTS (SELECT 1 FROM [Setting] WHERE [name] = N'gdprsettings.lognewslett
 BEGIN
 	INSERT [Setting] ([Name], [Value], [StoreId])
 	VALUES (N'gdprsettings.lognewsletterconsent', N'true', 0)
+END
+GO
+
+IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = object_id('[Product_ProductAttribute_Mapping]') and NAME = 'CountOfDisplayedYears')
+BEGIN
+	ALTER TABLE [Product_ProductAttribute_Mapping]
+	ADD [CountOfDisplayedYears] int NULL
+END
+GO
+
+IF NOT EXISTS (SELECT 1 FROM sys.columns WHERE object_id = object_id('[CheckoutAttribute]') and NAME = 'CountOfDisplayedYears')
+BEGIN
+	ALTER TABLE [CheckoutAttribute]
+	ADD [CountOfDisplayedYears] int NULL
 END
 GO

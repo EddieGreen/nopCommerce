@@ -206,7 +206,7 @@ namespace Nop.Web.Factories
                     Name = attribute.GetLocalized(x => x.Name),
                     TextPrompt = attribute.GetLocalized(x => x.TextPrompt),
                     IsRequired = attribute.IsRequired,
-                    AttributeControlType = attribute.AttributeControlType,
+                    AttributeControlType = attribute.AttributeControlType,                    
                     DefaultValue = attribute.DefaultValue
                 };
                 if (!string.IsNullOrEmpty(attribute.ValidationFileAllowedExtensions))
@@ -288,6 +288,8 @@ namespace Nop.Web.Factories
                         break;
                     case AttributeControlType.Datepicker:
                         {
+                            attributeModel.CountOfDisplayedYears = attribute.CountOfDisplayedYears;
+
                             //keep in mind my that the code below works only in the current culture
                             var selectedDateStr = _checkoutAttributeParser.ParseValues(selectedCheckoutAttributes, attribute.Id);
                             if (selectedDateStr.Any())
@@ -299,8 +301,7 @@ namespace Nop.Web.Factories
                                     attributeModel.SelectedMonth = selectedDate.Month;
                                     attributeModel.SelectedYear = selectedDate.Year;
                                 }
-                            }
-                            
+                            }                            
                         }
                         break;
                     case AttributeControlType.FileUpload:

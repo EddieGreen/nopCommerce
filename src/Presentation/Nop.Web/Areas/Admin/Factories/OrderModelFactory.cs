@@ -604,7 +604,8 @@ namespace Nop.Web.Areas.Admin.Factories
                     TextPrompt = attribute.TextPrompt,
                     IsRequired = attribute.IsRequired,
                     AttributeControlType = attribute.AttributeControlType,
-                    HasCondition = !string.IsNullOrEmpty(attribute.ConditionAttributeXml)
+                    HasCondition = !string.IsNullOrEmpty(attribute.ConditionAttributeXml),
+                    CountOfDisplayedYears = attribute.CountOfDisplayedYears
                 };
                 if (!string.IsNullOrEmpty(attribute.ValidationFileAllowedExtensions))
                 {

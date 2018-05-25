@@ -249,6 +249,10 @@ namespace Nop.Web.Models.Catalog
             /// </summary>
             public string DefaultValue { get; set; }
             /// <summary>
+            /// Count of displayed years for datepicker
+            /// </summary>
+            public int? CountOfDisplayedYears { get; set; }
+            /// <summary>
             /// Selected day value for datepicker
             /// </summary>
             public int? SelectedDay { get; set; }

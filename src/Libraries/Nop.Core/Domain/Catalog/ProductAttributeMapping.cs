@@ -63,6 +63,11 @@ namespace Nop.Core.Domain.Catalog
         public int? ValidationFileMaximumSize { get; set; }
 
         /// <summary>
+        /// Gets or sets count of displayes years (for date picker)
+        /// </summary>
+        public int? CountOfDisplayedYears { get; set; }
+
+        /// <summary>
         /// Gets or sets the default value (for textbox and multiline textbox)
         /// </summary>
         public string DefaultValue { get; set; }
